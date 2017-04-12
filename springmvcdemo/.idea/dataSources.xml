@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Test@HUWENJING" uuid="ae536d7f-4f86-46e0-bfba-ba523e1b1e66">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://HUWENJING\SQLEXPRESS:1433;databaseName=Test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="SQL Server (Microsoft) - YmtRelease@YmtRelease.db.ymatou.com" uuid="ff42a4a0-64e6-4377-9392-5fe4fdd32b25">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://YmtRelease.db.ymatou.com:1433;databaseName=YmtRelease</jdbc-url>
+    </data-source>
+  </component>
+</project>

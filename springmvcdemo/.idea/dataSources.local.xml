@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Test@HUWENJING" uuid="ae536d7f-4f86-46e0-bfba-ba523e1b1e66">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <domain-auth>true</domain-auth>
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="SQL Server (Microsoft) - YmtRelease@YmtRelease.db.ymatou.com" uuid="ff42a4a0-64e6-4377-9392-5fe4fdd32b25">
+      <database-info product="Microsoft SQL Server" version="11.00.3000" jdbc-version="4.0" driver-name="Microsoft JDBC Driver 4.0 for SQL Server" driver-version="4.0.2206.100">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>YmtRelease</user-name>
+      <resolve-scope>YmtRelease:*</resolve-scope>
+    </data-source>
+  </component>
+</project>
