@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="repository.IAWSellerGradeOperation">
+    <select id="selectGradeByGradeId"  resultType="entity.po.AWSellerGradePo">
+      select top 1 * from ymt_awsellergrade where gradeid = #{arg0}
+      <if test="arg1!=null">and sellerId=#{arg1}</if>
+    </select>
+    <resultMap type="entity.po.AWSellerGradePo" id="resultListAWSellerGrade">
+    </resultMap>
+    <select id="selectGradeListBySellerId" parameterType="int" resultMap="resultListAWSellerGrade">
+        select * from ymt_awsellergrade where sellerid = #{sellerId}
+    </select>
+
+
+    <insert id="addGrade" parameterType="entity.po.AWSellerGradePo"
+            useGeneratedKeys="false" keyProperty="gradeId">
+        insert into ymt_awsellergrade(gradeId,sellerId,sellerLoginId,grade,action,useDate,createTime)
+        values(#{gradeId},#{sellerId},#{sellerLoginId},#{grade},#{action},#{useDate},#{createTime})
+    </insert>
+
+    <update id="updateGrade" parameterType="entity.po.AWSellerGradePo" >
+        update ymt_awsellergrade set grade=#{grade},action=#{action} where gradeId=#{gradeId}
+    </update>
+
+
+    <delete id="deleteGrade" parameterType="string">
+        delete from ymt_awsellergrade where gradeId=#{gradeId}
+    </delete>
+</mapper>
